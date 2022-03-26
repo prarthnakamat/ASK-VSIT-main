@@ -18,7 +18,7 @@ const Dashboard = ({
   }, [getCurrentProfile]);
 
   return (
-    <section className="container">
+    <section className="gray-section-container gray-section">
       <h1 className="large text-primary">Dashboard</h1>
       <p className="lead">
         <i className="fas fa-user" /> Welcome {user && user.name}

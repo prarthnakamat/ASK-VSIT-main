@@ -71,40 +71,6 @@ export const removeLike = (id) => async (dispatch) => {
 
 
 
-// Add Dislike
-export const addDislike = (id) => async (dispatch) => {
-  try {
-    const res = await api.put(`/posts/dislike/${id}`);
-
-    dispatch({
-      type: UPDATE_LIKES,
-      payload: { id, dislikes: res.data }
-    });
-  } catch (err) {
-    dispatch({
-      type: POST_ERROR,
-      payload: { msg: err.response.statusText, status: err.response.status }
-    });
-  }
-};
-
-// Remove Dislike
-export const removeDislike = (id) => async (dispatch) => {
-  try {
-    const res = await api.put(`/posts/undislike/${id}`);
-
-    dispatch({
-      type: UPDATE_LIKES,
-      payload: { id, dislikes: res.data }
-    });
-  } catch (err) {
-    dispatch({
-      type: POST_ERROR,
-      payload: { msg: err.response.statusText, status: err.response.status }
-    });
-  }
-};
-
 // Delete post
 export const deletePost = (id) => async (dispatch) => {
   try {

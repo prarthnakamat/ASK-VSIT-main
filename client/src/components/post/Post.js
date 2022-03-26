@@ -17,7 +17,7 @@ const Post = ({ getPost, post: { post, loading } }) => {
   return loading || post === null ? (
     <Spinner />
   ) : (
-    <section className="container">
+      <section className="gray-section-container gray-section">
       <Link to="/posts" className="btn">
         Back To Posts
       </Link>
@@ -28,7 +28,8 @@ const Post = ({ getPost, post: { post, loading } }) => {
           <CommentItem key={comment._id} comment={comment} postId={post._id} />
         ))}
       </div>
-    </section>
+      </section>
+    
   );
 };
 

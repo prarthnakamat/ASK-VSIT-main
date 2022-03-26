@@ -23,7 +23,7 @@ const AddEducation = ({ addEducation }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
-    <section className="container">
+    <section className="gray-section-container gray-section">
       <h1 className="large text-primary">Add Your Education</h1>
       <p className="lead">
         <i className="fas fa-code-branch" /> Add any school or bootcamp that you

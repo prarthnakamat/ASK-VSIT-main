@@ -8,7 +8,7 @@ const CommentForm = ({ postId, addComment }) => {
 
   return (
     <div className='post-form'>
-      <div className='bg-primary p'>
+      <div className='borderradius bg-primary p'>
         <h3>Leave a Comment</h3>
       </div>
       <form
@@ -28,7 +28,7 @@ const CommentForm = ({ postId, addComment }) => {
           onChange={e => setText(e.target.value)}
           required
         />
-        <input type='submit' className='btn btn-dark my-1' value='Submit' />
+        <input type='submit' className='btn btn-primary' value='Submit' />
       </form>
     </div>
   );

@@ -22,7 +22,7 @@ const AddExperience = ({ addExperience }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
-    <section className="container">
+    <section className="gray-section-container gray-section">
       <h1 className="large text-primary">Add An Experience</h1>
       <p className="lead">
         <i className="fas fa-code-branch" /> Add any developer/programming

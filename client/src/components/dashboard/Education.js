@@ -24,7 +24,8 @@ const Education = ({ education, deleteEducation }) => {
   ));
 
   return (
-    <Fragment>
+    <div className='bg-light box'>
+      <Fragment >
       <h2 className="my-2">Education Credentials</h2>
       <table className="table">
         <thead>
@@ -38,6 +39,8 @@ const Education = ({ education, deleteEducation }) => {
         <tbody>{educations}</tbody>
       </table>
     </Fragment>
+    </div>
+    
   );
 };
 
