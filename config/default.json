@@ -1,5 +1,5 @@
 {
-    "mongoURI" :"mongodb+srv://admin:GaTLueab.Yqim3g@askvsit.zvoqo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoURI" :"mongodb+srv://prarthnakamat:AviXRXT8ZXoEPsPO@cluster0.duqeo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret": "mysecrettoken",
-    "githubToken":"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"
+    "githubToken":"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"
 }
